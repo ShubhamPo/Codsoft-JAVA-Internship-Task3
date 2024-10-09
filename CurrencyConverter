@@ -1,0 +1,121 @@
+
+package com.company;
+import java.util.*;
+
+// Currency Converter.
+public class Task2 {
+    public static void main(String args[]){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Select the Base currency and target currency from the following list.");
+            System.out.println("1.INR \n 2.USD \n 3.PKR \n 4.EURO");
+
+            System.out.println("Please enter the base currency:");
+            String baseCurrency = sc.next();
+            System.out.println("Please enter the target currency:");
+            String targetCurrency = sc.next();
+            System.out.println("_");
+
+            if(baseCurrency.equals(targetCurrency)){
+                System.out.println("Sorry..!!Please enter the valid input.");
+            }
+            else{
+                if((baseCurrency.equals("USD") ||baseCurrency.equals("usd")) &&
+                        ( targetCurrency.equals("INR") ||targetCurrency.equals("inr"))){
+                    System.out.println("Please enter the USD amount:");
+                    float USD = sc.nextFloat();
+                    float INR = USD * 83.77f ;
+                    System.out.println("The INR amount is: "+ INR + "₹.");
+                }
+
+                else if((baseCurrency.equals("USD")||baseCurrency.equals("usd")
+                ) &&( targetCurrency.equals("EURO")||targetCurrency.equals("euro"))){
+                    System.out.println("Please enter the USD amount:");
+                    float USD = sc.nextFloat();
+                    float EURO = USD * 0.90f ;
+                    System.out.println("The EURO amount is: "+ EURO+ "€");
+                }
+
+                else if((baseCurrency.equals("USD")||baseCurrency.equals("usd")) &&
+                        (targetCurrency.equals("PKR")||targetCurrency.equals("pkr"))){
+                    System.out.println("Please enter the USD amount:");
+                    float USD = sc.nextFloat();
+                    float PKR = USD * 277.85f ;
+                    System.out.println("The PKR amount is: "+ PKR+ "Rs.");
+                }
+
+                else if((baseCurrency.equals("INR")||baseCurrency.equals("inr")) &&
+                        ( targetCurrency.equals("USD")||targetCurrency.equals("usd"))){
+                    System.out.println("Please enter the INR amount:");
+                    float INR = sc.nextFloat();
+                    float USD = INR * 0.012f ;
+                    System.out.println("The USD amount is: "+ USD+ "$");
+                }
+
+                else if((baseCurrency.equals("INR")||baseCurrency.equals("inr")) &&
+                        ( targetCurrency.equals("EURO")||targetCurrency.equals("usd"))){
+                    System.out.println("Please enter the INR amount:");
+                    float INR = sc.nextFloat();
+                    float EURO = INR * 0.011f ;
+                    System.out.println("The EURO amount is: "+ EURO+ "€");
+                }
+
+                else if((baseCurrency.equals("INR")||baseCurrency.equals("inr")) &&
+                        ( targetCurrency.equals("PKR")||targetCurrency.equals("pkr"))){
+                    System.out.println("Please enter the INR amount:");
+                    float INR = sc.nextFloat();
+                    float PKR = INR * 3.33f;
+                    System.out.println("The PKR amount is: "+ PKR+ "Rs.");
+                }
+
+                else if((baseCurrency.equals("EURO")||baseCurrency.equals("euro")) &&
+                        ( targetCurrency.equals("USD")||targetCurrency.equals("usd"))){
+                    System.out.println("Please enter the EURO amount:");
+                    float EURO = sc.nextFloat();
+                    float USD = EURO * 1.11f ;
+                    System.out.println("The USD amount is: "+ USD+ "$.");
+                }
+
+                else if((baseCurrency.equals("EURO")||baseCurrency.equals("euro")) &&
+                        (targetCurrency.equals("INR")||targetCurrency.equals("inr"))){
+                    System.out.println("Please enter the EURO amount:");
+                    float EURO = sc.nextFloat();
+                    float INR = EURO * 93.21f ;
+                    System.out.println("The INR amount is: "+ INR + "₹.");
+                }
+
+                else if((baseCurrency.equals("EURO")||baseCurrency.equals("euro")) &&
+                        (targetCurrency.equals("PKR")||targetCurrency.equals("pkr"))){
+                    System.out.println("Please enter the EURO amount:");
+                    float EURO = sc.nextFloat();
+                    float PKR = EURO * 309.88f ;
+                    System.out.println("The PKR amount is: "+ PKR+ "Rs.");
+                }
+
+                else if((baseCurrency.equals("PKR")||baseCurrency.equals("pkr"))
+                        && (targetCurrency.equals("USD")||targetCurrency.equals("usd"))){
+                    System.out.println("Please enter the PKR amount:");
+                    float PKR = sc.nextFloat();
+                    float USD = PKR * 0.0036f ;
+                    System.out.println("The USD amount is: "+ USD+ "$.");
+                }
+
+                else if((baseCurrency.equals("PKR")||baseCurrency.equals("pkr")) &&
+                        (targetCurrency.equals("INR")||targetCurrency.equals("inr"))){
+                    System.out.println("Please enter the PKR amount:");
+                    float PKR = sc.nextFloat();
+                    float INR = PKR * 0.30f ;
+                    System.out.println("The INR amount is: "+ INR+ ("₹."));
+                }
+
+                else if((baseCurrency.equals("PKR")||baseCurrency.equals("pkr")) &&
+                        (targetCurrency.equals("EURO")||targetCurrency.equals("euro"))){
+                    System.out.println("Please enter the PKR amount:");
+                    float PKR = sc.nextFloat();
+                    float EURO = PKR * 0.0032f ;
+                    System.out.println("The EURO amount is: "+ EURO+ "€" );
+                }
+            }
+        }
+
+
+    }
